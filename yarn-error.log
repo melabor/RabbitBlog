@@ -1,0 +1,32 @@
+Arguments: 
+  /Users/wanggaoxian/.nvm/versions/node/v16.16.0/bin/node /Users/wanggaoxian/.nvm/versions/node/v16.16.0/bin/yarn add --dev vitepress
+
+PATH: 
+  /Users/wanggaoxian/.nvm/versions/node/v16.16.0/bin:/usr/local/mysql/bin:/usr/local/mongodb/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/wanggaoxian/Library/Application Support/JetBrains/Toolbox/scripts
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: connect ENETUNREACH 10.250.0.3:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
+
+npm manifest: 
+  {
+    "name": "vitepress-starter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
