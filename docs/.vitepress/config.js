@@ -1,4 +1,9 @@
-module.exports = {
+import { defineConfig } from 'vitepress'
+const path = require('path')
+
+export default defineConfig({
+  srcDir: './src',
+  base: '/docs/',
   title: '兔子前端',
   description: '欢迎来到兔子前端',
   themeConfig: {
@@ -6,7 +11,7 @@ module.exports = {
     nav: [
       {
         text: '免费路线',
-        link: '/free/freeIndex.md',
+        link: path.join('/', 'learn_path', '/'),
         activeMatch: '',
       },
       {
@@ -64,34 +69,42 @@ module.exports = {
         ],
       },
     ],
-    sidebar: [
-      {
-        text: 'Vue',
-        items: [{ text: '1' }, { text: '2' }, { text: '3' }, { text: '4' }],
-        collapsible: 'true',
-      },
-      {
-        text: 'React',
-        items: [{ text: '' }],
-      },
-      {
-        text: '小程序',
-        items: [{ text: '' }],
-      },
-      {
-        text: 'UniApp',
-        items: [{ text: '' }],
-      },
-      {
-        text: 'Taro',
-        items: [{ text: '' }],
-      },
-    ],
-    socialLinks: [{ icon: 'github', link: 'https://github.com/RabbitCodeHole' }],
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You',
+    sidebar: {
+      '/learn_path/': [
+        {
+          // text: '开始',
+          items: [
+            { text: 'Html', link: '/learn_path/' },
+            { text: 'Css', link: '/learn_path/Css' },
+            { text: 'JavaScript', link: '/learn_path/JavaScript' },
+            { text: 'TypeScript', link: '/learn_path/TypeScript' },
+            { text: 'Vue', link: '/learn_path/Vue' },
+          ],
+        },
+      ],
+      '/guide/': [
+        {
+          // text: '开始',
+          items: [
+            { text: 'AAA', link: '/guide/' },
+            { text: 'Vue', link: '/guide/getting-started' },
+          ],
+        },
+      ],
     },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/RabbitCodeHole' }],
+    // footer: {
+    //   message: 'Released under the MIT License.',
+    //   copyright: 'Copyright © 2019-present Evan You',
+    // },
+    search: {
+      provider: 'local',
+    },
+    displayAllHeaders: true,
   },
+
   docFooter: { prev: '上一篇', next: '下一篇' },
-}
+})
+// module.exports = {
+
+// }
