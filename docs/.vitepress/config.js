@@ -3,6 +3,7 @@ const path = require('path')
 
 export default defineConfig({
   srcDir: './src',
+  cleanUrls: true,
   title: '兔子前端',
   description: '欢迎来到兔子前端',
   themeConfig: {
