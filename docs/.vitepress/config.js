@@ -28,7 +28,7 @@ export default defineConfig({
         text: '前端工具库',
         items: [
           { text: 'dayJs', link: '' },
-          { text: 'bigJs', link: '' },
+          { text: 'Fabric.js', link: path.join('/', 'Fabric', '/') },
           { text: 'bigJs', link: '' },
           { text: 'bigJs', link: '' },
         ],
@@ -73,12 +73,26 @@ export default defineConfig({
       '/learn_path/': [
         {
           // text: '开始',
+          // collapsable: true,
           items: [
             { text: 'Html', link: '/learn_path/' },
             { text: 'Css', link: '/learn_path/Css' },
             { text: 'JavaScript', link: '/learn_path/JavaScript' },
             { text: 'TypeScript', link: '/learn_path/TypeScript' },
             { text: 'Vue', link: '/learn_path/Vue' },
+          ],
+        },
+      ],
+      '/Fabric/': [
+        {
+          // text: '开始',
+          // collapsable: false,
+          item: [
+            { text: '入门', link: '/Fabric/' },
+            { text: '入门', link: '/Fabric/' },
+            { text: '入门', link: '/Fabric/' },
+            { text: '入门', link: '/Fabric/' },
+            { text: '入门', link: '/Fabric/' },
           ],
         },
       ],
